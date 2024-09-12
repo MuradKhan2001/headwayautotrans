@@ -6,7 +6,7 @@ import NotFound from "../notFound/NotFound";
 export const MyContext = createContext();
 
 function App() {
-    const [url, setUrl] = useState('https://api.headwayautotrans.com/api/');
+    const [url, setUrl] = useState('https://api.headwayautotransport.com/api/');
     return (
         <>
             <MyContext.Provider value={{
