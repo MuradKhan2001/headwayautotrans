@@ -52,15 +52,15 @@ const Footer = () => {
                     </div>
                     <div className="social-media">
                         <a target="_blank" href={contact.instagramm}>
-                            <img src="./images/Instagram.png" alt=""/>
+                            <img src="./images/instagram.png" alt=""/>
                         </a>
 
                         <a target="_blank" href={contact.facebook}>
-                            <img src="./images/Facebook.png" alt=""/>
+                            <img src="./images/facebook.png" alt=""/>
                         </a>
 
                         <a target="_blank" href={contact.twitter}>
-                            <img src="./images/Vector.png" alt=""/>
+                            <img src="./images/vector.png" alt=""/>
                         </a>
                     </div>
                 </div>

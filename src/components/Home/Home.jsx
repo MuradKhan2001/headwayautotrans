@@ -43344,7 +43344,7 @@ const Home = () => {
             </div>
             <div className="sides">
                 <div className="main-title">
-                    How do i book with an auto transport company?
+                    How do I book with an auto transport company?
                 </div>
                 <div className="title">
                     Headway auto transport’s company guide to quick, easy and safe auto shipping
