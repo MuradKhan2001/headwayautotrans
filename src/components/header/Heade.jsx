@@ -37,6 +37,8 @@ const Header = () => {
                 <div className="icon-info">
                     <img src="./images/mail.png" alt=""/>
                 </div>
+
+
                 <div className="text-information">
                     <div className="title">Email</div>
                     {contact.email}
