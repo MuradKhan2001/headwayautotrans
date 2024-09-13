@@ -60,7 +60,7 @@ const Footer = () => {
                         </a>
 
                         <a target="_blank" href={contact.twitter}>
-                            <img src="./images/vector.png" alt=""/>
+                            <img src="./images/twitter.png" alt=""/>
                         </a>
                     </div>
                 </div>

@@ -110,16 +110,18 @@ const Navbar = () => {
             </div>
             
             <div className="icons-social-media">
+
                 <a target="_blank" href={contact.instagramm}>
                     <img src="./images/instagram.png" alt=""/>
                 </a>
+
 
                 <a target="_blank" href={contact.facebook}>
                     <img src="./images/facebook.png" alt=""/>
                 </a>
 
                 <a target="_blank" href={contact.twitter}>
-                    <img src="./images/vector.png" alt=""/>
+                    <img src="./images/twitter.png" alt=""/>
                 </a>
             </div>
 
