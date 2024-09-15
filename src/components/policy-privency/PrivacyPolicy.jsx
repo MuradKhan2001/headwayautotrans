@@ -218,7 +218,7 @@ const PrivacyPolicy = () => {
                         <p>
                             <strong><strong
                                 id="docs-internal-guid-07cda860-7fff-23b7-e41f-41f91561ce62">🌐
-                            </strong>https://headwayautotransport.net/</strong>
+                            </strong>https://headwayautotransport.com/</strong>
                             <strong>
                                 <br/>
                             </strong>

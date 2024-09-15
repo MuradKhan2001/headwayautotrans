@@ -719,7 +719,7 @@ const TermsAndConditions = () => {
                             Inc.</strong></p>
                         <p><strong><strong
                             id="docs-internal-guid-07cda860-7fff-23b7-e41f-41f91561ce62">🌐
-                        </strong>https://headwayautotransport.net/</strong><strong><br /></strong><strong><strong
+                        </strong>https://headwayautotransport.com/</strong><strong><br /></strong><strong><strong
                             id="docs-internal-guid-23114b55-7fff-1666-47eb-8628a64d33a7">📧&nbsp;
                         </strong>admin@headwayautotransport.net</strong><strong><br /></strong><strong><strong
                             id="docs-internal-guid-0daa29b2-7fff-fcfa-b335-9a8e6e7826cd">🏠

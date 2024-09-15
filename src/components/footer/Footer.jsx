@@ -181,7 +181,7 @@ const Footer = () => {
                         }, 200)
                         navigate("/")
                     }} className="text">
-                        ©  HEADWAY AUTO TRANSPORT LLC
+                        ©  HEADWAY AUTO TRANSPORT Inc
                     </div>
 
                     <div className="line"></div>

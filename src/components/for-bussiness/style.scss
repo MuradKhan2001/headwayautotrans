@@ -318,7 +318,7 @@
 
               .review {
                 width: 400px;
-                height: 280px;
+                height: 320px;
                 padding: 10px;
 
                 .content {
@@ -338,6 +338,7 @@
 
                   .header {
                     width: 100%;
+                    height: max-content;
                     display: flex;
                     justify-content: space-between;
 
@@ -365,16 +366,15 @@
 
                         .name-user {
                           font-family: "Rubik", sans-serif;
-                          font-size: 20px;
+                          font-size: 18px;
                           font-weight: 500;
-                          line-height: 23.7px;
                         }
                       }
                     }
 
                     .google {
-                      width: 40px;
-                      height: 40px;
+                      width: 90px;
+                      height: 90px;
 
                       img {
                         width: 100%;
@@ -384,13 +384,13 @@
 
                   .des {
                     padding-right: 10px;
-                    margin-top: 10px;
+                    margin-top: 5px;
                     font-family: "Krub", sans-serif;
                     font-size: 14px;
                     font-style: italic;
                     font-weight: 500;
                     line-height: 21.28px;
-                    height: 50%;
+                    height: 45%;
                     overflow-y: auto;
 
                     &::-webkit-scrollbar {

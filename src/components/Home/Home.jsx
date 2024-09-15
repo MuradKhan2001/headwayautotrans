@@ -4,6 +4,7 @@ import React, {useEffect, useState, useContext} from "react";
 import Slider from "react-slick";
 import Footer from "../footer/Footer";
 import Header from "../header/Heade";
+import Typical from "react-typical"
 import TextTransition, {presets} from 'react-text-transition';
 import CountUp from "react-countup";
 import ScrollTrigger from "react-scroll-trigger";
@@ -42754,7 +42755,20 @@ const Home = () => {
                     <div className="text-wrapper">
                         <div data-aos="zoom-in" className="text-large">
                             <p className="main-text"> WE DELIVER</p>
-                            <p><TextTransition springConfig={presets.slow}>{TEXTS[index % TEXTS.length]}</TextTransition></p>
+                            <Typical
+                                loop={Infinity}
+                                steps={[
+                                    "Motorcycles",
+                                    2300,
+                                    "Suvs",
+                                    2300,
+                                    "Boats-Rvs",
+                                    2300,
+                                    "Pick up",
+                                    2300,
+                                    "Cars",
+                                    2300,
+                                ]}/>
                         </div>
                         <div className="des-text">
                             TOP CHOICE AUTO TRANSPORT COMPANY NATIONWIDE
