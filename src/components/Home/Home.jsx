@@ -5,6 +5,7 @@ import Slider from "react-slick";
 import Footer from "../footer/Footer";
 import Header from "../header/Heade";
 import Typical from "react-typical"
+import Textra from 'react-textra'
 import TextTransition, {presets} from 'react-text-transition';
 import CountUp from "react-countup";
 import ScrollTrigger from "react-scroll-trigger";
@@ -14,7 +15,7 @@ import {MyContext} from "../App/App";
 import axios from "axios";
 import {Typeahead} from "react-bootstrap-typeahead";
 
-const TEXTS  = ['Motorcycle', 'Suv', 'Boats-Rv', 'Pick up', 'Car'];
+const TEXTS = ['Motorcycle', 'Suv', 'Boats-Rv', 'Pick up', 'Car'];
 const Home = () => {
     let value = useContext(MyContext);
     const navigate = useNavigate();
@@ -42605,6 +42606,7 @@ const Home = () => {
         dots: false,
         infinite: true,
         speed: 2000,
+        fade: true,
         autoplay: true,
         navs: true,
         slidesToScroll: 1,
@@ -42755,20 +42757,7 @@ const Home = () => {
                     <div className="text-wrapper">
                         <div data-aos="zoom-in" className="text-large">
                             <p className="main-text"> WE DELIVER</p>
-                            <Typical
-                                loop={Infinity}
-                                steps={[
-                                    "Motorcycles",
-                                    2300,
-                                    "Suvs",
-                                    2300,
-                                    "Boats-Rvs",
-                                    2300,
-                                    "Pick up",
-                                    2300,
-                                    "Cars",
-                                    2300,
-                                ]}/>
+                            <p><Textra effect='scale' data={['Motorcycles', 'Suvs', 'Boats-Rvs', 'Pick up', 'Cars']}/></p>
                         </div>
                         <div className="des-text">
                             TOP CHOICE AUTO TRANSPORT COMPANY NATIONWIDE
@@ -43497,7 +43486,8 @@ const Home = () => {
                     </div>
                     <div className="title">MOTORCYCLE SHIPPING</div>
                     <div className="des">
-                        Nationwide motorcycle shipping has never been easier with Headway auto transport. We offer two types
+                        Nationwide motorcycle shipping has never been easier with Headway auto transport. We offer two
+                        types
                         of motorcycle transport services to our customers: Door-to-Door (home delivery) and shipping
                         between distribution centers. Home delivery (Door-to-Door) transport is the most common and
                         preferred customer solution.
@@ -43546,7 +43536,8 @@ const Home = () => {
                         Personalized approach
                     </div>
                     <div className="des">
-                        Why choose our auto transport company? Headway auto transport works with you through every step of
+                        Why choose our auto transport company? Headway auto transport works with you through every step
+                        of
                         your car or truck’s move. Experience hassle-free shipping when you choose us as your car
                         transporter and enjoy an easy and painless shipment process.
                     </div>
