@@ -4,6 +4,7 @@ import Navbar from "../Navbar/Navbar";
 import {useNavigate} from "react-router-dom";
 import Footer from "../footer/Footer";
 import Slider from "react-slick/lib";
+import ReviwsBox from "../reviews-box/ReviwsBox";
 import React, {useContext, useEffect, useState} from "react";
 import {MyContext} from "../App/App";
 import axios from "axios";
@@ -93,7 +94,8 @@ const BussinesPageThree = () => {
                                 <p data-aos="zoom-in">Fast execution and service to support rental car velocity</p>
                             </div>
                             <div className="des-text">
-                                Headway auto transport’s 16,000+ carrier network and industry expertise delivers the capacity
+                                Headway auto transport’s 16,000+ carrier network and industry expertise delivers the
+                                capacity
                                 and service you need now
                             </div>
                             <div className="buttons-home">
@@ -121,11 +123,13 @@ const BussinesPageThree = () => {
                     Proven rental car industry experience
                 </div>
                 <div className="des">
-                    We know the car rental space because our people have worked in it; now they’re at Headway auto transport.
+                    We know the car rental space because our people have worked in it; now they’re at Headway auto
+                    transport.
                     Each team member has worked at least 15 years at leading car rental companies. You’ll have access to
                     that knowledge base and get the response you deserve, from people who understand exactly what you
                     need.
-                    Headway auto transport works with big players, such as Enterprise, Avis and Hertz, as well as small and
+                    Headway auto transport works with big players, such as Enterprise, Avis and Hertz, as well as small
+                    and
                     medium-sized rental car companies. Each client has a dedicated account team and a single point of
                     contact to streamline communication and ensure the highest level of customer service.
                 </div>
@@ -137,7 +141,8 @@ const BussinesPageThree = () => {
                     16,000+ nationwide carrier network
                 </div>
                 <div className="des">
-                    Whether you have a single unit to move or 10,000, Headway auto transport can handle your volume with the
+                    Whether you have a single unit to move or 10,000, Headway auto transport can handle your volume with
+                    the
                     highest standards of safety and professionalism. “How many trucks can you send now?” We hear that
                     all the time and respond with “as many as you need.” That’s the power of a 16,000+ nationwide
                     carrier network, fully vetted and ready to roll.
@@ -150,53 +155,15 @@ const BussinesPageThree = () => {
 
         <div className="partners">
             <Slider {...settingsPartners}>
-                {partners.map((item, index)=>{
+                {partners.map((item, index) => {
                     return <div key={index} className="logo">
                         <img src={item.logo} alt=""/>
                     </div>
                 })}
             </Slider>
         </div>
-        <div className="reviews-container">
-            <div className="main-title">
-                Explore Our Reviews!
-            </div>
-            <div className="title">
-                See What Our Customers are Saying
-            </div>
-            <div className="slider-box-reviews">
-                <Slider {...settingsReviews}>
-                    {comments.map((item, index) => {
-                        return <div key={index} className="review">
-                            <div className="content">
-                                <div className="header">
-                                    <div className="left">
-                                        <div className="name">
-                                            <div className="name-user">{item.name}</div>
-                                        </div>
-                                    </div>
-                                    <div className="google">
-                                        <img src={item.image} alt=""/>
-                                    </div>
-                                </div>
-                                <div className="des">
-                                    {item.comment}
-                                </div>
-                                <div className="stars">
-                                    <img src="./images/star1.png" alt=""/>
-                                    <img src="./images/star1.png" alt=""/>
-                                    <img src="./images/star1.png" alt=""/>
-                                    <img src="./images/star1.png" alt=""/>
-                                    <img src="./images/star1.png" alt=""/>
-                                </div>
-                            </div>
-                        </div>
-                    })}
 
-
-                </Slider>
-            </div>
-        </div>
+        <ReviwsBox/>
         <Footer/>
     </div>
 };

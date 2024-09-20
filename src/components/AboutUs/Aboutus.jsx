@@ -5,6 +5,7 @@ import {useNavigate} from "react-router-dom";
 import Footer from "../footer/Footer";
 import Slider from "react-slick/lib";
 import React, {useContext, useEffect, useState} from "react";
+import ReviwsBox from "../reviews-box/ReviwsBox";
 import ScrollTrigger from "react-scroll-trigger";
 import CountUp from "react-countup";
 import Aos from "aos";
@@ -41,30 +42,6 @@ const AboutUs = () => {
         }, {
             breakpoint: 480, settings: {
                 slidesToShow: 3, slidesToScroll: 3
-            }
-        }]
-    };
-    const settingsReviews = {
-        lazyLoad: false,
-        slidesToShow: 3,
-        dots: false,
-        infinite: true,
-        speed: 2000,
-        autoplay: true,
-        navs: true,
-        slidesToScroll: 3,
-        initialSlide: 3,
-        responsive: [{
-            breakpoint: 1024, settings: {
-                slidesToShow: 3, slidesToScroll: 3, infinite: true, dots: false
-            }
-        }, {
-            breakpoint: 600, settings: {
-                slidesToShow: 1, slidesToScroll: 1, initialSlide: 1
-            }
-        }, {
-            breakpoint: 480, settings: {
-                slidesToShow: 1, slidesToScroll: 1
             }
         }]
     };
@@ -116,46 +93,7 @@ const AboutUs = () => {
             </div>
         </div>
 
-        <div className="reviews-container">
-            <div className="main-title">
-                Explore Our Reviews!
-            </div>
-            <div className="title">
-                See What Our Customers are Saying
-            </div>
-            <div className="slider-box-reviews">
-                <Slider {...settingsReviews}>
-                    {comments.map((item, index) => {
-                        return <div key={index} className="review">
-                            <div className="content">
-                                <div className="header">
-                                    <div className="left">
-                                        <div className="name">
-                                            <div className="name-user">{item.name}</div>
-                                        </div>
-                                    </div>
-                                    <div className="google">
-                                        <img src={item.image} alt=""/>
-                                    </div>
-                                </div>
-                                <div className="des">
-                                    {item.comment}
-                                </div>
-                                <div className="stars">
-                                    <img src="./images/star1.png" alt=""/>
-                                    <img src="./images/star1.png" alt=""/>
-                                    <img src="./images/star1.png" alt=""/>
-                                    <img src="./images/star1.png" alt=""/>
-                                    <img src="./images/star1.png" alt=""/>
-                                </div>
-                            </div>
-                        </div>
-                    })}
-
-
-                </Slider>
-            </div>
-        </div>
+       <ReviwsBox/>
 
         <div data-aos="fade-up" className="section-why-us">
             <div className="content-info">

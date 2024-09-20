@@ -1,5 +1,6 @@
 import React, {useContext, useEffect} from "react";
 import "./style.scss"
+import ReviwsBox from "../reviews-box/ReviwsBox";
 import Header from "../header/Heade";
 import Navbar from "../Navbar/Navbar";
 import {useNavigate} from "react-router-dom";
@@ -254,7 +255,8 @@ const ForIndividuals = () => {
                     </div>
                     <div className="title">MOTORCYCLE SHIPPING</div>
                     <div className="des">
-                        Nationwide motorcycle shipping has never been easier with Headway auto transport. We offer two types
+                        Nationwide motorcycle shipping has never been easier with Headway auto transport. We offer two
+                        types
                         of motorcycle transport services to our customers: Door-to-Door (home delivery) and shipping
                         between distribution centers. Home delivery (Door-to-Door) transport is the most common and
                         preferred customer solution.
@@ -299,46 +301,7 @@ const ForIndividuals = () => {
             </Slider>
         </div>
 
-        <div className="reviews-container">
-            <div className="main-title">
-                Explore Our Reviews!
-            </div>
-            <div className="title">
-                See What Our Customers are Saying
-            </div>
-            <div className="slider-box-reviews">
-                <Slider {...settingsReviews}>
-                    {comments.map((item, index) => {
-                        return <div key={index} className="review">
-                            <div className="content">
-                                <div className="header">
-                                    <div className="left">
-                                        <div className="name">
-                                            <div className="name-user">{item.name}</div>
-                                        </div>
-                                    </div>
-                                    <div className="google">
-                                        <img src={item.image} alt=""/>
-                                    </div>
-                                </div>
-                                <div className="des">
-                                    {item.comment}
-                                </div>
-                                <div className="stars">
-                                    <img src="./images/star1.png" alt=""/>
-                                    <img src="./images/star1.png" alt=""/>
-                                    <img src="./images/star1.png" alt=""/>
-                                    <img src="./images/star1.png" alt=""/>
-                                    <img src="./images/star1.png" alt=""/>
-                                </div>
-                            </div>
-                        </div>
-                    })}
-
-
-                </Slider>
-            </div>
-        </div>
+        <ReviwsBox/>
         <Footer/>
     </div>
 };

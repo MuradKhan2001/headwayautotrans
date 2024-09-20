@@ -57,7 +57,7 @@ const Reviews = () => {
         Aos.init({duration: 1000});
     }, []);
 
-    return <div className="reviews-container">
+    return <div className="reviews-container-box">
         <Header/>
         <Navbar/>
         <div className="header-content">
@@ -112,12 +112,19 @@ const Reviews = () => {
                             <div className="des">
                                 {item.comment}
                             </div>
-                            <div className="stars">
-                                <img src="./images/star1.png" alt=""/>
-                                <img src="./images/star1.png" alt=""/>
-                                <img src="./images/star1.png" alt=""/>
-                                <img src="./images/star1.png" alt=""/>
-                                <img src="./images/star1.png" alt=""/>
+
+                            <div className="footer-reviews">
+                                <div className="stars">
+                                    <img src="./images/star1.png" alt=""/>
+                                    <img src="./images/star1.png" alt=""/>
+                                    <img src="./images/star1.png" alt=""/>
+                                    <img src="./images/star1.png" alt=""/>
+                                    <img src="./images/star1.png" alt=""/>
+                                </div>
+
+                                <div className="link">
+                                    <a target="_blank" href={item.link}>more...</a>
+                                </div>
                             </div>
                         </div>
                     </div>

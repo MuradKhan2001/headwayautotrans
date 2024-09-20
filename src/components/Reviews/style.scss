@@ -1,4 +1,4 @@
-.reviews-container {
+.reviews-container-box {
   width: 100%;
 
   .header-content {
@@ -191,16 +191,25 @@
           background-color: rgb(244, 211, 205);
           padding: 25px;
           transition: 0.3s linear;
-          cursor: pointer;
           border-radius: 0 0 15px 15px;
 
           &:hover {
             background-color: #B31942;
             color: white;
+
+            .footer-reviews {
+              .link {
+                a{
+                  color: white!important;
+                }
+
+              }
+            }
           }
 
           .header {
             width: 100%;
+            height: max-content;
             display: flex;
             justify-content: space-between;
 
@@ -228,16 +237,15 @@
 
                 .name-user {
                   font-family: "Rubik", sans-serif;
-                  font-size: 20px;
+                  font-size: 18px;
                   font-weight: 500;
-                  line-height: 23.7px;
                 }
               }
             }
 
             .google {
-              width: 80px;
-              height: 80px;
+              width: 90px;
+              height: 90px;
 
               img {
                 width: 100%;
@@ -247,13 +255,13 @@
 
           .des {
             padding-right: 10px;
-            margin-top: 10px;
+            margin-top: 5px;
             font-family: "Krub", sans-serif;
             font-size: 14px;
             font-style: italic;
             font-weight: 500;
             line-height: 21.28px;
-            height: 50%;
+            height: 45%;
             overflow-y: auto;
 
             &::-webkit-scrollbar {
@@ -272,13 +280,23 @@
             }
           }
 
-          .stars {
+          .footer-reviews {
             display: flex;
-            margin-top: 15px;
+            align-items: flex-end;
+            justify-content: space-between;
 
-            img {
-              width: 30px;
-              margin-right: 10px;
+            .stars {
+              display: flex;
+              margin-top: 15px;
+
+              img {
+                width: 30px;
+                margin-right: 10px;
+              }
+            }
+
+            .link {
+              cursor: pointer;
             }
           }
         }
@@ -296,16 +314,25 @@
           background-color: rgb(244, 211, 205);
           padding: 25px;
           transition: 0.3s linear;
-          cursor: pointer;
           border-radius: 0 0 15px 15px;
 
           &:hover {
             background-color: #B31942;
             color: white;
+
+            .footer-reviews {
+              .link {
+                a{
+                  color: white!important;
+                }
+
+              }
+            }
           }
 
           .header {
             width: 100%;
+            height: max-content;
             display: flex;
             justify-content: space-between;
 
@@ -333,16 +360,15 @@
 
                 .name-user {
                   font-family: "Rubik", sans-serif;
-                  font-size: 20px;
+                  font-size: 18px;
                   font-weight: 500;
-                  line-height: 23.7px;
                 }
               }
             }
 
             .google {
-              width: 80px;
-              height: 80px;
+              width: 90px;
+              height: 90px;
 
               img {
                 width: 100%;
@@ -352,13 +378,13 @@
 
           .des {
             padding-right: 10px;
-            margin-top: 10px;
+            margin-top: 5px;
             font-family: "Krub", sans-serif;
             font-size: 14px;
             font-style: italic;
             font-weight: 500;
             line-height: 21.28px;
-            height: 50%;
+            height: 45%;
             overflow-y: auto;
 
             &::-webkit-scrollbar {
@@ -377,13 +403,23 @@
             }
           }
 
-          .stars {
+          .footer-reviews {
             display: flex;
-            margin-top: 15px;
+            align-items: flex-end;
+            justify-content: space-between;
 
-            img {
-              width: 30px;
-              margin-right: 10px;
+            .stars {
+              display: flex;
+              margin-top: 15px;
+
+              img {
+                width: 30px;
+                margin-right: 10px;
+              }
+            }
+
+            .link {
+              cursor: pointer;
             }
           }
         }
